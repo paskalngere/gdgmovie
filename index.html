@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Bootstrap style CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm" style="background-color: #30475e">
+      <div class="container">
+        <a href="#" id="home"><img src="/img/logonav.png" style="width: 120px; margin-right: 10px" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#" id="popular">Popular</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#" id="upcoming">Upcoming</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#" id="toprated">Top Rated</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Genre </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="genre-dropdown">
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- jumbotron -->
+    <div class="jumbotron pt-5" style="background-color: #30475e; border-radius: 0%; margin-bottom: 0%">
+      <div class="container pt-5 pb-3">
+        <div class="row justify-content-center">
+          <div class="col-md-6 pt-lg-5">
+            <h1 class="fw-bold animate__slideInRight" style="color: #f05454; font-size: 50px">Welcome.</h1>
+            <p class="lead fw-bold lh-sm" style="color: #dddddd">Millions of movies info and people to discover. <br /><span style="font-size: x-large; color: #f05454">Explore now.</span></p></p>
+            <!-- search input -->
+            <form class="d-flex pt-lg-3">
+              <input class="form-control me-2 input-keyword" id="search-input" type="text" placeholder="Search movie ..." aria-label="Search" />
+              <button class="btn search-button" id="search-button" style="background-color: #f05454; color: #fff" type="submit">Search</button>
+            </form>
+            <!-- end search input -->
+          </div>
+          <div class="col-md-4 text-center pt-4">
+            <img src="/img/logojumbo.png" class="img-fluid" style="width: 270px" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End jumbotron -->
+
+    <!-- Main -->
+    <div class="container-fluid p-5" style="background-color: #222831" id="container-main">
+      <!-- <div class="teksgenre"></div> -->
+      <div class="row movie-container justify-content-center" id="con-movie"></div>
+    </div>
+    <!-- End main -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="movieDetailModal" tabindex="-1" aria-labelledby="movieDetailModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="movieDetailModalLabel">Movie Detail</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" style="background-color: #f05454" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
+
+    <!-- footer -->
+    <section id="footer">
+      <div class="footer-bottom">
+        <p>copyright &copy;2021 Gudang Movie | designed by <span>Paskal Ngere</span></p>
+    </div>
+    </section>
+    <!-- End Footer -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

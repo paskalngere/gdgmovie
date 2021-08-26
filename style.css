@@ -1,0 +1,31 @@
+/* main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie {
+  width: 80px;
+}
+
+.movie img {
+  width: 50%;
+} */
+
+.footer-bottom {
+  background: #30475e;
+  width: 100vw;
+  padding: 20px 0 10px;
+  text-align: center;
+}
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+  color: #dddddd;
+}
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-weight: 200;
+}
